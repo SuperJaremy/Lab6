@@ -73,6 +73,7 @@ public class Work {
                 new PrintFieldDescendingNumberOfParticipants();
         Command uid=new Update();
         Command remove_id = new RemoveByID();
+        Command script = new ExecuteScript();
         Commands.put(info.getName(), info);
         Commands.put(help.getName(), help);
         Commands.put(show.getName(),show);
@@ -88,6 +89,7 @@ public class Work {
         printFieldDescendingNumberOfParticipants);
         Commands.put(uid.getName(),uid);
         Commands.put(remove_id.getName(),remove_id);
+        Commands.put(script.getName(),script);
     }
     public Answer execute(Meta meta) {
         Answer answer;
