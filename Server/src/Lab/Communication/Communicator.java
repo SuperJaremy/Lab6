@@ -31,7 +31,7 @@ public class Communicator {
     public void open() throws IOException {
         dc=DatagramChannel.open();
         dc.configureBlocking(false);
-        dc.bind(new InetSocketAddress(InetAddress.getLocalHost(),8888));
+        dc.bind(new InetSocketAddress(InetAddress.getLocalHost(),14087));
         isOpened=true;
     }
     public void close() throws IOException{
